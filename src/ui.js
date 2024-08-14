@@ -4,7 +4,7 @@ export const renderTasks = () => {
     const taskList = document.getElementById("task-list");
     taskList.innerHTML = "";
 
-    const tasks = getTasks();
+    const tasks = getTask();
     tasks.forEach((task) => {
         const li = document.createElement("li");
         li.setAttribute("data-id", task.id);
@@ -15,7 +15,7 @@ export const renderTasks = () => {
         }
 
         li.innerHTML = `
-        ${taks.text}
+        ${task.text}
         <button class = "delete"> Eliminar </button>
         <button class = "toggle"> ${task.completed == false ? "Completar" : "Deshacer"} <button>
         `;
