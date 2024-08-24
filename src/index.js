@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Agregar el eventp ára los botones
+    // Agregar el evento para los botones
     document.getElementById("task-list").addEventListener("click", (e) => {
         if(e.target.classList.contains("delete")) {
             const taskId = e.target.parentElement. getAttribute("data-id");
