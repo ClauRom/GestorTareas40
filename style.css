@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Instrument+Serif:ital@0;1&family=Kalnia+Glaze:wght@100..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Instrument+Serif:ital@0;1&family=Kalnia+Glaze:wght@100..700&family=Pacifico&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Courgette&family=Instrument+Serif:ital@0;1&family=Kalnia+Glaze:wght@100..700&family=Khand:wght@300;400;500;600;700&family=Pacifico&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+body{
+    background: rgb(182,239,245);
+    background: linear-gradient(180deg, rgba(182,239,245,1) 0%, rgba(88,153,177,1) 54%, rgba(59,97,143,1) 96%);
+    margin: 0;
+}
+
+/*Estilos Menú*/
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8496D1;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.menu li{
+    float: left;
+    font-size: 25px;
+    }
+
+.menu li a{
+    display: block;
+    color: #111111;
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none;
+}
+
+.menu li a:hover:not(.active){
+    background-color: #9385C7;
+    padding: 1rem 15rem;
+}
+
+.active {
+    background-color: #731e84;
+}
+
+/*Estilos de Presentación*/
+
+.inicio {
+    color: #43083c;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem 15rem;
+}
+
+.contacto_inicio  {
+    padding: 10px 20px;
+}
+
+.contacto_inicio img {
+    margin: 0 15px;
+}
+
+.foto {
+    border-radius: 100%;
+}
+
+figcaption {
+    display: none;
+    transition: all .5s;
+    font-size: 25px;
+}
+
+figure:hover > figcaption {
+    display: block;
+    transition: all .5s;
+}
+
+/*Estilos para Sobre mí*/
+
+.sobre_mi {
+    background-color: aliceblue;
+    padding: 1rem 2rem;
+    font-size: 20px;
+    font-family: "Roboto Serif", serif;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*Estilos para subtitulos (Diseño web, Diseño gráfico)*/
+
+h2 {
+    text-align: center;
+    color: rgb(4, 53, 53);
+    background-color: #62DCDC;
+    margin: 10px 100px;
+}
+
+.titulo_2 {
+    color: aliceblue;
+    padding: 1rem 2rem;
+}
+
+/*Estilos para certificados*/
+
+.cursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 0 10rem;
+}
+
+.diplomas {
+    padding: 3rem 5rem;
+}
+
+/*Estilos de Skills iconos*/
+
+.icon {
+   background-color: antiquewhite;
+   padding: 2rem 4rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: start;
+   flex-wrap: wrap;
+}
+
+.icon img {
+    margin: 0 20px;
+}
+
+/*Estilos para proyectos*/
+/*Diseño Web*/
+
+.acordeon-cuerpo {
+    padding: 1rem 29rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nota {
+    font-size: 20px;
+    color: #eccbfe;
+}
+
+/*Diseño Gráfico*/
+
+.etiqueta p {
+    font-size: 30px;
+    font-family: "Courgette", cursive;
+}
+
+.acordeon .etiqueta {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: #111111;
+    cursor: pointer;
+}
+
+.acordeon .etiqueta::before {
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+
+/*Oculta el contenido dw*/
+
+.acordeon .contenido {
+    position: relative;
+    height: 0;
+    width: 1180px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.acordeon .contenido_dw {
+    position: relative;
+    height: 0;
+    width: 880px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 5%;
+}
+
+.acordeon hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid rgb(152, 198, 208);
+    flex-wrap: wrap;
+}
+
+/*Oculta el contenido dg*/
+
+.acordeon .contenido_dg {
+    position: relative;
+    height: 0;
+    width: 880px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+/*Muestra el contenido dw*/
+
+.acordeon .contenedor.activa .contenido {
+    height: 1050px;
+}
+
+.acordeon .contenedor.activa .contenido_dw {
+    height: 500px;
+}
+
+/*Muestra el contenido dg*/
+
+.acordeon .contenedor.activa .contenido_dg {
+    height: 500px;
+}
+
+/*Estilos para iconos de contacto*/
+
+.contacto {
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto img {
+    margin: 0 15px;
+}
+
